@@ -55,13 +55,13 @@
 ## 🔗 Find me on
 
 <p align="center">
-  <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">
+  <a href="https://linkedin.com/in/joy-%E2%80%8E-46263b221/" target="_blank">
     <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn" height="40"/>
   </a>&nbsp;
   <a href="https://github.com/Joy-2612" target="_blank">
     <img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub" height="40"/>
   </a>&nbsp;
-  <a href="https://instagram.com/YOUR_INSTAGRAM" target="_blank">
+  <a href="https://www.instagram.com/en_joy_2003/" target="_blank">
     <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram" height="40"/>
   </a>
 </p>
