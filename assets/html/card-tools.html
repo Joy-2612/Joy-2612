@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Languages &amp; Tools Card</title>
+  <style>
+   
+    @import url('https://fonts.googleapis.com/css?family=Krub:400,700&display=swap');
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: black;
+      font-family: 'Krub', sans-serif;
+    }
+
+    .card.tools-card {
+      box-sizing: border-box;
+      width: 740px;
+      margin: 40px auto;
+      padding: 24px;
+      border-radius: 20px;
+      border: 3px solid transparent;
+      background-image:
+        radial-gradient(
+          ellipse at right top,
+          rgb(131, 52, 162) 0%,
+          #1e1e1e 47%,
+          #1e1e1e 100%
+        ),
+        linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.89) 0%,
+          #232228 60%,
+          rgb(221, 53, 255) 100%
+        );
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+      color: #fff;
+    }
+    .card.tools-card h3 {
+      margin: 0 0 16px;
+      font-size: 20px;
+      text-align: left;
+    }
+    .tools-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+    .tools-grid img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <div class="card tools-card">
+    <h3>Languages &amp; Tools</h3>
+    <div class="tools-grid">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="Docker">
+      <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/aws-color.png" alt="AWS">
+    </div>
+  </div>
+</body>
+</html>

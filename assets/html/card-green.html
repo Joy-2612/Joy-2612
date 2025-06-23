@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Green Info Card</title>
+  <style>
+
+    @import url('https://fonts.googleapis.com/css?family=Krub:400,700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Krub', sans-serif;
+      background-color: #fff;
+    }
+
+    .card.green-card {
+      box-sizing: border-box;
+      width: 700px;
+      max-width: none;
+      margin: 20px 0 0;
+      padding: 20px;
+      border-radius: 20px;
+      border: 3px solid transparent;
+      background-image:
+        radial-gradient(
+          ellipse at right top,
+          rgb(52, 162, 92) 0%,
+          #1e1e1e 47%,
+          #1e1e1e 100%
+        ),
+        linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.83) 0%,
+          #232228 60%,
+          rgb(53, 255, 111) 100%
+        );
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+      color: #fff;
+    }
+
+    .card.green-card h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+
+    .card.green-card .inline-logo {
+      vertical-align: middle;
+      height: 50px;
+      width: auto;
+      margin: 0 6px;
+    }
+
+    .card.green-card h4 {
+      margin: 12px 0 12px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .card.green-card p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card green-card">
+    <h3>
+      <img
+        src="https://docs.google.com/drawings/d/e/2PACX-1vThj1h050f90iKGwpkb27WDHRtTPODAFzn7mKycY553WLPbA9yv2XiUPQleyVd52Gm7mtk9S57Gwlj6/pub?w=960&h=720"
+        alt="Greenphard Energy Logo"
+        class="inline-logo">
+    </h3>
+    <h4>System Engineer</h4>
+    <p>
+      I’m part of the DevOps team at Greenphard Energy, where I design and maintain our CI/CD pipelines,
+      manage Kubernetes clusters, and help architect resilient, scalable microservices for our renewable-energy platforms.
+    </p>
+  </div>
+
+</body>
+</html>
