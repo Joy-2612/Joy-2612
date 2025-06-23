@@ -1,48 +1,53 @@
 # Hi there 👋, I'm Joy
 
-<table>
-<tr>
-  <!-- LEFT: About Me + Platforms -->
-  <td valign="top" width="50%" style="padding-right:20px;">
-    <h2>👨‍💻 About Me</h2>
-    <hr style="border:0;height:1px;background:#ccc;margin:4px 0 12px;">
-    <p>
-      I’m a <strong>System Engineer &amp; Fullstack Developer</strong><br>
-      with a passion for building robust, scalable applications and optimizing system architecture.<br>
-      I love tackling challenging problems and learning new technologies along the way.
-    </p>
-    <p>
-      🌱 Currently learning <strong>Kubernetes &amp; GraphQL</strong><br>
-      💬 Ask me about <strong>DevOps, System Design &amp; Web Development</strong><br>
-      📫 How to reach me: j2612200@gmail.com
-    </p>
-    <p>
-      I’m also learning Data Structures and Algorithms 👩🏻‍💻
-    </p>
-    <p>
-      <img src="assets/images/platforms-card.png" alt="Platforms Card" />
-    </p>
-  </td>
+<table width="100%" style="table-layout:fixed;">
+  <tr>
+    <!-- LEFT: About Me + Platforms (flex pushes platforms to bottom) -->
+    <td width="50%" style="padding-right:20px; vertical-align:top;">
+      <div style="display:flex; flex-direction:column; justify-content:space-between; height:100%;">
+        <!-- top section: About Me -->
+        <div>
+          <h2>👨‍💻 About Me</h2>
+          <hr style="border:0;height:1px;background:#ccc;margin:4px 0 12px;" />
+          <p>
+            I’m a <strong>System Engineer &amp; Fullstack Developer</strong><br>
+            with a passion for building robust, scalable applications and optimizing system architecture.<br>
+            I love tackling challenging problems and learning new technologies along the way.
+          </p>
+          <p>
+            🌱 Currently learning <strong>Kubernetes &amp; GraphQL</strong><br>
+            💬 Ask me about <strong>DevOps, System Design &amp; Web Development</strong><br>
+            📫 How to reach me: j2612200@gmail.com
+          </p>
+          <p>
+            I’m also learning Data Structures and Algorithms 👩🏻‍💻
+          </p>
+        </div>
+        <!-- bottom section: Platforms card -->
+        <div>
+          <img src="assets/images/platforms-card.png" alt="Platforms Card" style="max-width:100%;" />
+        </div>
+      </div>
+    </td>
+    <td width="50%" style="padding-left:20px; vertical-align:top;">
+        <img src="assets/images/profile-card.png" alt="Profile Card" style="max-width:100%;" />
+    </td>
 
-  <!-- RIGHT: Profile Card -->
-  <td valign="top" width="50%" style="padding-left:20px;">
-    <img src="assets/images/profile-card.png" alt="Profile Card" />
-  </td>
-</tr>
+  </tr>
 
-<tr>
   <!-- GREEN INFO CARD full width -->
-  <td colspan="2" align="center" style="padding-top:20px;">
-    <img src="assets/images/green-card.png" alt="Green Info Card" />
-  </td>
-</tr>
+  <tr>
+    <td colspan="2" align="center" style="padding-top:20px;">
+      <img src="assets/images/green-card.png" alt="Green Info Card" style="max-width:100%;" />
+    </td>
+  </tr>
 
-<tr>
   <!-- LANGUAGES & TOOLS CARD full width -->
-  <td colspan="2" align="center" style="padding-top:20px;">
-    <img src="assets/images/tools-card.png" alt="Languages & Tools Card" />
-  </td>
-</tr>
+  <tr>
+    <td colspan="2" align="center" style="padding-top:20px;">
+      <img src="assets/images/tools-card.png" alt="Languages & Tools Card" style="max-width:100%;" />
+    </td>
+  </tr>
 </table>
 
 ---
