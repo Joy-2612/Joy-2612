@@ -515,3 +515,8 @@ rgb(0, 0, 0) 50%,
     <img align="center" src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram" height="40"/>
   </a>
 </p>
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/Joy-2612/Joy-2612/main/assets/profile-card.svg"
+    alt="My GitHub Profile Card" />
+</p>
