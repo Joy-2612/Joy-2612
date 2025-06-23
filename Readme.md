@@ -15,10 +15,9 @@
             I love tackling challenging problems and learning new technologies along the way.
           </p>
           <p>
-            🌱 Currently learning <strong>Kubernetes &amp; GraphQL</strong><br>
+            🌱 Currently learning terraform and Apache Airflow</strong><br>
             💬 Ask me about <strong>DevOps, System Design &amp; Web Development</strong><br>
-            📫 How to reach me: j2612200@gmail.com
-          </p>
+            📫 How to reach me: <strong><a href="mailto:j2612200@gmail.com">j2612200@gmail.com</a></strong><br>         </p>
           <p>
             I’m also learning Data Structures and Algorithms 👩🏻‍💻
           </p>
