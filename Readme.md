@@ -8,7 +8,6 @@
         <!-- top section: About Me -->
         <div>
           <h2>👨‍💻 About Me</h2>
-          <hr style="border:0;height:1px;background:#ccc;margin:4px 0 12px;" />
           <p>
             I’m a <strong>System Engineer &amp; Fullstack Developer</strong><br>
             with a passion for building robust, scalable applications and optimizing system architecture.<br>
