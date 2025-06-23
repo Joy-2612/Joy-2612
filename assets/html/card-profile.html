@@ -9,8 +9,7 @@
 
     /* base page styles */
     body {
-      margin: 0;
-      padding: 0;
+      margin: 0; padding: 0;
       background-color: white;
       color: black;
       font-family: 'Krub', sans-serif;
@@ -24,180 +23,169 @@
       border-radius: 20px;
       border: 3px solid transparent;
       background-image:
-        radial-gradient(
-          ellipse at right top,
-          rgb(162, 52, 52) 0%,
-          #1e1e1e 47%,
-          #1e1e1e 100%
-        ),
-        linear-gradient(
-          45deg,
-          rgb(35, 34, 40) 0%,
-          rgb(0, 0, 0) 50%,
-          rgb(255, 53, 53) 100%
-        );
+        radial-gradient(ellipse at right top, rgb(162,52,52) 0%, #1e1e1e 47%, #1e1e1e 100%),
+        linear-gradient(45deg, rgb(35,34,40) 0%, rgb(0,0,0) 50%, rgb(255,53,53) 100%);
       background-clip: padding-box, border-box;
       background-origin: padding-box, border-box;
       box-sizing: border-box;
     }
 
-    .ds-top {
-      width: 340px;
-      height: 80px;
-      margin-left: -10px;
-    }
+    .ds-top { width:340px; height:80px; margin-left:-10px; }
 
     .avatar-holder {
-      position: absolute;
-      top: 40px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background: #111;
-      padding: 5px;
-      box-shadow: 0 0 0 5px #1e1e1e, inset 0 0 0 3px #000;
-      overflow: hidden;
+      position: absolute; top:40px; left:50%;
+      transform:translateX(-50%);
+      width:100px; height:100px;
+      border-radius:50%;
+      background:#111;
+      padding:5px;
+      box-shadow:0 0 0 5px #1e1e1e, inset 0 0 0 3px #000;
+      overflow:hidden;
     }
     .avatar-holder img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transform: scale(1.1);
-      transform-origin: center;
+      width:100%; height:100%; object-fit:cover;
+      transform:scale(1.1); transform-origin:center;
     }
 
     .name {
-      text-align: center;
-      padding-top: 50px;
-      z-index: 100;
+      text-align:center; padding-top:80px; z-index:100;
     }
     .name a {
-      position: relative;
-      color: #fff;
-      font-size: 30px;
-      font-weight: 700;
-      text-decoration: none;
+      color:#fff; font-size:30px; font-weight:700; text-decoration:none;
     }
-    .name a:hover {
-      text-decoration: underline;
-    }
-    .name h6 {
-      margin-top: 4px;
-      font-size: 12px;
-      color: #bbb;
-    }
-
-    .button {
-      text-align: center;
-      margin: 20px 0 0;
-    }
-    .button a {
-      display: inline-block;
-      padding: 6px 18px;
-      border: 1px solid #fff;
-      border-radius: 20px;
-      color: #fff;
-      font-size: 12px;
-      text-decoration: none;
-      transition: all .3s;
-    }
-    .button a:hover,
-    .button a.following {
-      background: #fff;
-      color: #111;
-    }
+    .name a:hover { text-decoration:underline; }
 
     .ds-info {
-      display: flex;
-      justify-content: space-around;
-      margin: 16px 0 0;
+      display:flex; justify-content:space-around; margin:8px 0 0;
     }
     .ds-info h6 {
-      font-size: 10px;
-      color: #fff;
-      text-transform: uppercase;
-      margin-bottom: 4px;
+      font-size:10px; color:#fff; text-transform:uppercase; margin-bottom:4px;
     }
     .ds-info p {
-      text-align:center;
-      color: white;
-      font-size: 14px;
-      margin: 0;
+      text-align:center; color:#fff; font-size:14px; margin:0;
     }
 
     .ds-skill {
-      padding: 20px;
+      padding:20px;
     }
     .ds-skill h6 {
-      font-size: 12px;
-      color: #fff;
-      margin-top: 12px;
-      text-transform: uppercase;
-      margin-bottom: 8px;
+      font-size:12px; color:#fff; text-transform:uppercase; margin:0 0 8px;
     }
     .ds-skill .skill {
-      margin-bottom: 10px;
+      position:relative; /* for absolute label */
+      margin-bottom:16px;
     }
     .ds-skill .skill h6 {
-      font-size: 10px;
-      margin: 0 0 4px;
-      color: #ddd;
+      font-size:10px; margin:0 0 4px; color:#ddd;
     }
     .ds-skill .bar {
-      height: 6px;
-      background: rgb(233, 52, 24);
-      position: relative;
-      overflow: hidden;
-      transition: background .3s;
-      border-radius: 10px;
+      height:6px; background:rgb(233,52,24);
+      border-radius:10px; overflow:hidden;
+      transition:background .3s;
+      width:0; /* set by JS */
     }
-    .ds-skill .bar p {
-      position: absolute;
-      right: 4px;
-      top: -2px;
-      font-size: 8px;
-      color: #111;
+    .ds-skill .bar:hover { background:#4A90E2; }
+
+    .ds-skill .bar-label {
+      position:absolute;
+      top:-13px;   /* just above the bar */
+      right:0;     /* flush right */
+      font-size:11px;
+      color:#fff;
     }
-    .ds-skill .bar:hover {
-      background: #4A90E2;
-    }
-    .bar-html { width: 95%; }
-    .bar-css  { width: 90%; }
-    .bar-js   { width: 80%; }
   </style>
 </head>
 <body>
+
+  <script>
+    const profileData = {
+      avatarUrl: 'https://github.com/Joy-2612.png?size=512',
+      githubUrl: 'https://github.com/Joy-2612',
+      name: 'Joy',
+      stats: { repos: 31, commits: 373, prs: 53 },
+      skills: [
+        { selector: '.bar-python', percent: 50 },
+        { selector: '.bar-js',     percent: 28 },
+        { selector: '.bar-html',   percent: 10 },
+        { selector: '.bar-css',    percent: 8  },
+        { selector: '.bar-hcl',    percent: 4  }
+      ]
+    };
+  </script>
+
   <div class="card">
     <div class="ds-top"></div>
+
     <div class="avatar-holder">
-      <img src="https://github.com/Joy-2612.png?size=512" alt="Joy’s Avatar">
+      <img id="avatarImg" src="" alt="Avatar">
     </div>
+
     <div class="name">
-      <a href="https://github.com/Joy-2612" target="_blank">Joy</a>
-      <h6>120 Followers</h6>
+      <a id="profileLink" href="" target="_blank"></a>
     </div>
-    <div class="button">
-      <a href="#" class="follow-btn">Follow</a>
-    </div>
+
     <div class="ds-info">
-      <div><h6>Repos</h6><p>42</p></div>
-      <div><h6>Projects</h6><p>8</p></div>
-      <div><h6>Stars</h6><p>230</p></div>
+      <div><h6>Repos</h6><p id="repoCount"></p></div>
+      <div><h6>Projects</h6><p id="commitCount"></p></div>
+      <div><h6>Stars</h6><p id="prCount"></p></div>
     </div>
+
     <div class="ds-skill">
       <h6>Skills</h6>
+
       <div class="skill">
-        <h6>HTML5</h6><div class="bar bar-html"><p>95%</p></div>
+        <h6>Python</h6>
+        <div class="bar bar-python"></div>
+        <p class="bar-label"></p>
       </div>
+
       <div class="skill">
-        <h6>CSS3</h6><div class="bar bar-css"><p>90%</p></div>
+        <h6>JavaScript</h6>
+        <div class="bar bar-js"></div>
+        <p class="bar-label"></p>
       </div>
+
       <div class="skill">
-        <h6>JavaScript</h6><div class="bar bar-js"><p>80%</p></div>
+        <h6>HTML</h6>
+        <div class="bar bar-html"></div>
+        <p class="bar-label"></p>
       </div>
+
+      <div class="skill">
+        <h6>CSS</h6>
+        <div class="bar bar-css"></div>
+        <p class="bar-label"></p>
+      </div>
+
+      <div class="skill">
+        <h6>HCL</h6>
+        <div class="bar bar-hcl"></div>
+        <p class="bar-label"></p>
+      </div>
+
     </div>
   </div>
+
+  <script>
+    // fill avatar + name
+    document.getElementById('avatarImg').src = profileData.avatarUrl;
+    const linkEl = document.getElementById('profileLink');
+    linkEl.href = profileData.githubUrl;
+    linkEl.textContent = profileData.name;
+
+    // fill stats
+    document.getElementById('repoCount').textContent    = profileData.stats.repos;
+    document.getElementById('commitCount').textContent = profileData.stats.commits;
+    document.getElementById('prCount').textContent     = profileData.stats.prs;
+
+    // fill skill bars & labels
+    profileData.skills.forEach(skill => {
+      const bar   = document.querySelector(skill.selector);
+      const label = bar.nextElementSibling;
+      bar.style.width      = skill.percent + '%';
+      label.textContent    = skill.percent + '%';
+    });
+  </script>
+
 </body>
 </html>
